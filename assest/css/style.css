@@ -11,6 +11,8 @@ a{
     text-align: justify;
 }
 
+.fw-6{font-weight: 600;}
+
 header .tophead{
     height: 28px;
     background-color: #34313a;
@@ -46,21 +48,42 @@ header .tophead .rightgroup ul li select{
     font-size: 13px;
 }
 
-/* Slider Section Start */
-.carousel-inner .carousel-item{
-    height: 400px;
+/*Navbar Section start */
+nav a{
+    font-size: 14px !important;
+    font-weight: 600 !important;
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+}
+#mega-menu {
+    display: none;
+    position: absolute;
+    background: #34313a;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+#mega-menu .choose-us {
+    padding-left: 100px;
+    padding-right: 50px;
+}
+#mega-menu .choose-us .abc:hover {
+    transform: scale(1.05);
+    transition: 0.3s all;
+}
+/*Navbar Section End */
 
-@keyframes zoomin{
-        from{
-            transform: scale(1);
-        }
-        to{
-            transform: scale(1.3);
-        }
-}
+/* Slider Section Start */
+/*.carousel-inner .carousel-item{
+    height: 500px;
+}*/
+
+
 .carousel-inner .carousel-item img{
     animation: zoomin 20s infinite;
+    filter: brightness(50%);
 }
 .carousel-dark .carousel-indicators [data-bs-target]{
     width: 20px;
@@ -90,16 +113,58 @@ header .tophead .rightgroup ul li select{
 }
 /* International Removal Section start */
 
+/* Indivisual Copporation start */
+    .imgbox{
+        overflow: hidden;
+    }
+    .imgbox img:hover{
+        transition: 1s all;
+        transform: scale(1.1);
+    }
+
+    .container .bttn {
+        background-color: red;
+        
+    }
+
+/* Indivisual Copporation start */
+
+/* Domestic Section start */
+.domestic{
+    background: #34313a;
+}
+.domestic img:hover{
+    transform: scale(1.1);
+}
+/* Domestic Section End */
+
+
+/* keyframe Section Start */
+@keyframes zoomin{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
+/* Keyframe Section End */
 
 
 /* Media Query start */
-@media only screen and (max-width: 1023){
+@media only screen and (max-width: 1023px){
     header .tophead{
         display: none;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
         font-size: 13px !important;
     }
+@media only screen and(min-width:992px){
+    .carousel-inner .carousel-item .carousel-caption{
+        bottom: 5rem;
+    }
+}
+/*
 @media only screen and (max-width: 768px){
     .carousel-inner .carousel-item .carousel-caption{
         bottom: 9.5rem !important;
@@ -108,5 +173,5 @@ header .tophead .rightgroup ul li select{
         bottom: 9rem !important;
     }
 }
-}
+}*/
 /* Media Query End */
